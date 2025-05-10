@@ -1,0 +1,53 @@
+$date
+	Fri May 09 20:10:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module eje1_tb $end
+$var reg 1 ! A $end
+$upscope $end
+$scope module eje1_tb $end
+$var reg 1 " B $end
+$upscope $end
+$scope module eje1_tb $end
+$var wire 1 # X $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x#
+x"
+x!
+$end
+#100000
+0#
+0"
+0!
+#200000
+1!
+#300000
+1#
+1"
+#400000
+0#
+0"
+#500000
+0!
+#600000
+1!
+#700000
+1#
+1"
+#800000
+0#
+0"
+#900000
+0!
+#11000000
