@@ -1,0 +1,187 @@
+$date
+	Sun May 11 16:37:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module eje7_tb $end
+$var reg 1 ! A $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 " B $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 # C $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 $ D $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 % x $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 & y $end
+$upscope $end
+$scope module eje7_tb $end
+$var reg 1 ' z $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 ( Y $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 ) Y_2 $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 * Z $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 + Z_2 $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 , F2 $end
+$upscope $end
+$scope module eje7_tb $end
+$var wire 1 - F2_2 $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#100000
+0(
+0,
+0-
+0)
+0*
+0+
+0%
+0&
+0'
+0!
+0"
+0#
+0$
+#200000
+1(
+1,
+1-
+1)
+1'
+1$
+#300000
+0(
+0,
+0-
+0)
+1&
+0'
+1#
+0$
+#400000
+1(
+1,
+1-
+1)
+1'
+1$
+#500000
+0(
+0)
+1%
+0&
+0'
+1"
+0#
+0$
+#600000
+1(
+1)
+1*
+1+
+1'
+1$
+#700000
+0(
+0,
+0-
+0)
+0*
+0+
+1&
+0'
+1#
+0$
+#800000
+1(
+1)
+1*
+1+
+1'
+1$
+#900000
+0(
+0)
+0*
+0+
+1!
+0"
+0#
+0$
+#1000000
+1(
+1)
+1*
+1+
+1$
+#1100000
+0*
+0+
+1#
+0$
+#1200000
+1$
+#1300000
+0(
+0)
+1"
+0#
+0$
+#1400000
+1(
+1)
+1*
+1+
+1$
+#1500000
+0(
+0)
+0*
+0+
+1#
+0$
+#1600000
+1(
+1)
+1*
+1+
+1$
+#11700000
