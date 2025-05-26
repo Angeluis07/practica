@@ -1,19 +1,17 @@
 `timescale 1ns/1ps
 
-module eje1_tb();
+module eje2_tb();
 
 // Entradas
   reg s_clk;
-  reg s_j;
-  reg s_k;
+  reg s_d;
 
 // Salida
   wire s_q;
 
-eje1 UUT(
+eje2 UUT(
     .clk(s_clk),
-    .j(s_j),
-    .k(s_k),
+    .d(s_d),
     .q(s_q)
 );
 
@@ -21,21 +19,17 @@ eje1 UUT(
 always #5 s_clk = ~s_clk;
 
 initial begin
-  $dumpfile("eje1_tb.vcd");
-  $dumpvars(0, eje1_tb);
+  $dumpfile("eje2_tb.vcd");
+  $dumpvars(0, eje2_tb);
   
   s_clk = 0;
-  s_j = 0;
-  s_k = 0;
+  s_d = 0;
 
   // Secuencia de prueba
-  #10 s_j = 1; s_k = 0; // Set
-  #10 s_j = 0; s_k = 1; // Reset
-  #10 s_j = 1; s_k = 1; // Toggle
-  #10 s_j = 0; s_k = 0; // Mantener
-  #10 s_j = 1; s_k = 1; // Toggle
-  #10 s_j = 0; s_k = 1; // Reset
-  #10 s_j = 1; s_k = 0; // Set
+  #12 s_d = 1;   // Cambia a 1 antes del siguiente flanco
+  #10 s_d = 0;   // Cambia a 0 después de un ciclo
+  #10 s_d = 1;   // Cambia a 1 después de otro ciclo
+  #10 s_d = 0;   // Cambia a 0 después de otro ciclo
 
   $finish;
 end
