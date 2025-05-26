@@ -1,5 +1,5 @@
 $date
-	Mon May 12 21:20:16 2025
+	Tue May 13 11:46:06 2025
 $end
 $version
 	Icarus Verilog
@@ -45,19 +45,19 @@ $dumpall
 $end
 #0
 $dumpvars
-x.
-x-
-x,
-x+
-x*
-x)
-x(
-x'
-1&
-x%
-x$
-x#
-x"
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+1$
+1#
+1"
 1!
 $end
 #20000

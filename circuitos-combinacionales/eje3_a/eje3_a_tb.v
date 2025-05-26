@@ -38,7 +38,16 @@ initial begin
     $dumpfile("eje3_a_tb.vcd");
     $dumpvars(0, eje3_a_tb);
 
-    E1 = 1'b1;
+    E0 = 0;
+    E1 = 0;
+    E2 = 0;
+    E3 = 0;
+    E4 = 0;
+    E5 = 0;
+    E6 = 0;
+    E7 = 0;
+    E8 = 0;
+    E9 = 0;
     $display("%0t\tA\tB\tC\tD");
 
     #10;
