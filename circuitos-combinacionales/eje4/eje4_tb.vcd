@@ -1,5 +1,5 @@
 $date
-	Fri May 30 16:29:31 2025
+	Sat May 31 00:36:42 2025
 $end
 $version
 	Icarus Verilog
@@ -9,10 +9,44 @@ $timescale
 $end
 $scope module eje4_tb $end
 $var wire 4 ! bcd [3:0] $end
-$var reg 4 " bin [3:0] $end
+$var wire 4 " G [3:0] $end
+$var wire 1 # D $end
+$var wire 7 $ Cod_Hamming [6:0] $end
+$var wire 1 % C $end
+$var wire 1 & B $end
+$var wire 1 ' A $end
+$var reg 4 ( BN [3:0] $end
+$var reg 1 ) E1 $end
+$var reg 1 * E2 $end
+$var reg 1 + E3 $end
+$var reg 1 , E4 $end
+$var reg 4 - bin [3:0] $end
+$var reg 4 . bits [3:0] $end
+$var integer 32 / i [31:0] $end
 $scope module UUT $end
-$var wire 4 # bin [3:0] $end
-$var reg 4 $ bcd [3:0] $end
+$var wire 4 0 bin [3:0] $end
+$var reg 4 1 bcd [3:0] $end
+$upscope $end
+$scope module UUT_b $end
+$var wire 1 ' A $end
+$var wire 1 & B $end
+$var wire 1 % C $end
+$var wire 1 # D $end
+$var wire 1 ) E1 $end
+$var wire 1 * E2 $end
+$var wire 1 + E3 $end
+$var wire 1 , E4 $end
+$upscope $end
+$scope module UUT_b_2 $end
+$var wire 4 2 BN [3:0] $end
+$var reg 4 3 G [3:0] $end
+$upscope $end
+$scope module UUT_c $end
+$var wire 4 4 bits [3:0] $end
+$var wire 1 5 p1 $end
+$var wire 1 6 p2 $end
+$var wire 1 7 p3 $end
+$var reg 7 8 Cod_Hamming [6:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -21,78 +55,165 @@ $dumpall
 $end
 #0
 $dumpvars
-bx $
-bx #
+b0 8
+07
+06
+05
+b0 4
+bx 3
+bx 2
+bx 1
+bx 0
+b0 /
+b0 .
+bx -
+x,
+x+
+x*
+x)
+bx (
+x'
+x&
+x%
+b0 $
+x#
 bx "
 bx !
 $end
 #1000
-b0 !
-b0 $
-b0 "
-b0 #
+15
+16
+17
+b1101001 $
+b1101001 8
+b1 .
+b1 4
+b1 /
 #2000
-b1 !
-b1 $
-b1 "
-b1 #
+05
+16
+17
+b101010 $
+b101010 8
+b10 .
+b10 4
+b10 /
 #3000
-b10 !
-b10 $
-b10 "
-b10 #
+15
+06
+07
+b1000011 $
+b1000011 8
+b11 .
+b11 4
+b11 /
 #4000
-b11 !
-b11 $
-b11 "
-b11 #
+15
+06
+17
+b1001100 $
+b1001100 8
+b100 .
+b100 4
+b100 /
 #5000
-b100 !
-b100 $
-b100 "
-b100 #
+05
+16
+07
+b100101 $
+b100101 8
+b101 .
+b101 4
+b101 /
 #6000
-b101 !
-b101 $
-b101 "
-b101 #
+15
+16
+07
+b1100110 $
+b1100110 8
+b110 .
+b110 4
+b110 /
 #7000
-b110 !
-b110 $
-b110 "
-b110 #
+05
+06
+17
+b1111 $
+b1111 8
+b111 .
+b111 4
+b111 /
 #8000
-b111 !
-b111 $
-b111 "
-b111 #
+15
+16
+07
+b1110000 $
+b1110000 8
+b1000 .
+b1000 4
+b1000 /
 #9000
-b1000 !
-b1000 $
-b1000 "
-b1000 #
+05
+06
+17
+b11001 $
+b11001 8
+b1001 .
+b1001 4
+b1001 /
 #10000
-b1001 !
-b1001 $
-b1001 "
-b1001 #
+15
+06
+17
+b1011010 $
+b1011010 8
+b1010 .
+b1010 4
+b1010 /
 #11000
-bx !
-bx $
-b1010 "
-b1010 #
+05
+16
+07
+b110011 $
+b110011 8
+b1011 .
+b1011 4
+b1011 /
 #12000
-b1011 "
-b1011 #
+05
+16
+17
+b111100 $
+b111100 8
+b1100 .
+b1100 4
+b1100 /
 #13000
-b1100 "
-b1100 #
+15
+06
+07
+b1010101 $
+b1010101 8
+b1101 .
+b1101 4
+b1101 /
 #14000
-b1101 "
-b1101 #
+05
+06
+07
+b10110 $
+b10110 8
+b1110 .
+b1110 4
+b1110 /
 #15000
-b1110 "
-b1110 #
+15
+16
+17
+b1111111 $
+b1111111 8
+b1111 .
+b1111 4
+b1111 /
 #16000
-b1111 "
-b1111 #
+b10000 /
