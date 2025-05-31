@@ -1,0 +1,98 @@
+$date
+	Fri May 30 16:29:31 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module eje4_tb $end
+$var wire 4 ! bcd [3:0] $end
+$var reg 4 " bin [3:0] $end
+$scope module UUT $end
+$var wire 4 # bin [3:0] $end
+$var reg 4 $ bcd [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#1000
+b0 !
+b0 $
+b0 "
+b0 #
+#2000
+b1 !
+b1 $
+b1 "
+b1 #
+#3000
+b10 !
+b10 $
+b10 "
+b10 #
+#4000
+b11 !
+b11 $
+b11 "
+b11 #
+#5000
+b100 !
+b100 $
+b100 "
+b100 #
+#6000
+b101 !
+b101 $
+b101 "
+b101 #
+#7000
+b110 !
+b110 $
+b110 "
+b110 #
+#8000
+b111 !
+b111 $
+b111 "
+b111 #
+#9000
+b1000 !
+b1000 $
+b1000 "
+b1000 #
+#10000
+b1001 !
+b1001 $
+b1001 "
+b1001 #
+#11000
+bx !
+bx $
+b1010 "
+b1010 #
+#12000
+b1011 "
+b1011 #
+#13000
+b1100 "
+b1100 #
+#14000
+b1101 "
+b1101 #
+#15000
+b1110 "
+b1110 #
+#16000
+b1111 "
+b1111 #
