@@ -48,9 +48,10 @@ wire p2_calculado = codigoH_recalculado[10];
 wire p3_calculado = codigoH_recalculado[8];
 wire p4_calculado = codigoH_recalculado[4];
 
-reg [3:0] error_posicion = 4'b0000;
+reg [3:0] error_posicion;
 
 always @(*) begin
+    error_posicion = 4'b0000; // Inicializamos el registro de errores
     if (p1_recibido != p1_calculado) error_posicion[0] = 1;
     if (p2_recibido != p2_calculado) error_posicion[1] = 1;
     if (p3_recibido != p3_calculado) error_posicion[2] = 1;
