@@ -1,0 +1,68 @@
+$date
+	Thu Jun 12 19:29:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module eje5_tb $end
+$var wire 4 ! datosMod [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 3 # op [2:0] $end
+$scope module UUT $end
+$var wire 4 $ datos [3:0] $end
+$var wire 3 % op [2:0] $end
+$var reg 4 & datosMod [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 &
+b0 %
+b111 $
+b0 #
+b111 "
+b111 !
+$end
+#10000
+b11 !
+b11 &
+b1 #
+b1 %
+#20000
+b1110 !
+b1110 &
+b10 #
+b10 %
+#30000
+b11 !
+b11 &
+b101 #
+b101 %
+#40000
+b1110 !
+b1110 &
+b110 #
+b110 %
+#50000
+b1011 !
+b1011 &
+b11 #
+b11 %
+#60000
+b1110 !
+b1110 &
+b111 #
+b111 %
+#70000
+b0 !
+b0 &
+b100 #
+b100 %
+#80000
