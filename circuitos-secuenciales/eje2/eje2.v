@@ -1,14 +1,14 @@
 /// Flip-Flop D
 
 
-module eje2(
+module flip_flop_d(
     input clk,
     input d,
-    output reg q;
+    output reg q = 0
 );
 
 always @(posedge clk) begin
-    q <= d;
+    q = d;
 end
 
 endmodule

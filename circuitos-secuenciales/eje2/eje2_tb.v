@@ -9,7 +9,7 @@ module eje2_tb();
 // Salida
   wire s_q;
 
-eje2 UUT(
+flip_flop_d UUT(
     .clk(s_clk),
     .d(s_d),
     .q(s_q)
