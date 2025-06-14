@@ -2,20 +2,21 @@
 
 /// Flip-Flop JK básico
 
-module eje1 (
-    input wire clk,     // Reloj
-    input wire j,       // Entrada J
-    input wire k,       // Entrada K
-    output reg q = 0       // Salida
+module eje1(
+    input J,
+    input K,
+    input Clk,
+    output reg Q = 0
 );
 
-    always @(posedge clk) begin
-        case ({j, k})
-            2'b00: q <= q;       // Mantiene el estado
-            2'b01: q <= 0;       // Reset
-            2'b10: q <= 1;       // Set
-            2'b11: q <= ~q;      // Toggle
-        endcase
-    end
+always @(posedge Clk) begin
+    case ({J, K})
+        2'b00: Q <= Q;
+        2'b01: Q <= 1'b0;
+        2'b10: Q <= 1'b1;
+        2'b11: Q <= ~Q;
+
+    endcase
+end
 
 endmodule
