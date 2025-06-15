@@ -7,10 +7,11 @@ reg [3:0] s_b;
 reg [3:0] s_b_latch; // Para el latch, si es necesario
 reg s_clk;
 reg enable;
-
+reg [0:3] s_b_prueba;
 // Salidas
 wire [3:0] s_q;
-wire [3:0] s_q_latch; // Para el latch, si es necesario
+wire [3:0] s_q_latch; // Para el latch, si es necesarioç
+reg s;
 eje6_flip_flop UUT(
     .b(s_b),
     .clk(s_clk),
@@ -31,7 +32,9 @@ initial begin
   enable = 1'b0; // Inicialmente deshabilitado
   s_clk = 1'b0;
   s_b = 4'b1010;
+  s_b_prueba = 4'b1010;
   s_b_latch = 4'b1010; // Valor inicial para el latch
+   s = s_b_prueba[3];
   #5;
   // Prueba del Flip-Flop D
   s_clk = 1'b1; // Primer flanco de subida
